@@ -1,0 +1,3 @@
+[submodule "iris-messenger"]
+	path = iris-messenger
+	url = https://github.com/irislib/iris-messenger.git
