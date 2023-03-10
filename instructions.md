@@ -1,5 +1,14 @@
-# Instructions for Iris
+# Iris
+Iris is self hosted Nostr web client that is also available on Android and iOS. It is designed to provide a better experience for Nostr users by offering a range of features that enhance the social networking experience. Whether you are new to Nostr or a seasoned user, Iris is a great tool to explore.
 
-Instructions go here. These appear to the user in the UI on the Service page under **Instructions**.
+Getting started with Iris is easy. The web client of Iris works well with the Alby extension and supports multiple keys. Users can set Gif avatars as their profile picture, with a recommended size of 1500x500 pixels for profile banners. Iris also offers users the option to switch between a light and dark theme, which is remembered even when using other clients.
 
-You are allowed to include basic [Markdown formatting](https://www.markdownguide.org/basic-syntax).
+Users have various login options available when using Iris, such as npub and window.nostr login as well as Alby and nos2x browser extensions. Users can also paste their public key (npub) if they prefer not to make any changes.
+
+For Nostr profile URLs, Iris supports different formats, including iris.to/username, alice@example.com (if you have a NIP05), example.com (if you have a NIP05 _@example.com), and iristo/npub (nostr public key). Note that the username that you can change in "edit profile" is not unique. However, NIP05 identifiers such as alice@example.com are unique.
+
+Your Iris username is used to help other users find your Nostr profile easily. The format for an Iris username is iris.to/username, and you can use username@iris.to format (NIP05) in user searches. Please note that Iris usernames are unique, more than 3 characters long, and use letters and numbers only. You can use an underscore (_) but no other special characters are allowed. Namesquatting, impersonation, vulgar, or otherwise offensive usernames may result in you losing your username or may lead to spamming or other abusive username usage.
+
+Once you start using Iris, you'll find that it offers several useful features. For instance, notes can play audio, and the badge indicates that the user has a NIP05 identifier. You can download and copy your profile data and the following list, and you can restore your previous data either by uploading the file (.json) or pasting the same data into the field. If you block someone on Iris, DMs will be locally removed, and any further DMs rejected. You can adjust your feed experience by setting the following distance limit, and you can delete your account on the Account settings page.
+
+Overall, Iris is an excellent tool for Nostr users who want to enhance their social networking experience. With its range of features and user-friendly interface, Iris is a great choice for anyone looking to get the most out of Nostr.
