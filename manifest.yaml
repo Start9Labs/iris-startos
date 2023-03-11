@@ -17,7 +17,7 @@ upstream-repo: "https://github.com/irislib/iris-messenger"
 # URL to the support site / channel for the project. This key can be omitted if none exists, or it can link to the original project repository issues.
 support-site: "https://github.com/irislib/iris-messenger/issues"
 # URL to the marketing site for the project. This key can be omitted if none exists, or it can link to the original project repository. 
-marketing-site: "https://start9.com/"
+marketing-site: "https://github.com/irislib/iris-messenger"
 # The series of commands to build the project into an s9pk for arm64/v8. In this case we are using a Makefile with the simple build command "make".
 donation-url: "https://opencollective.com/iris-social"
 build: ["make"]
@@ -93,7 +93,7 @@ interfaces:
     # A human readable name for display in the UI
     name: User Interface
     # A descriptive description of what the interface does
-    description: A simple user interface that is expected to display the text "Hello Word"
+    description: A user interface that is expected to host Iris web app.
     tor-config:
     # Port mappings are from the external port to the internal container port
       port-mapping:
