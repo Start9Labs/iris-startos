@@ -1,7 +1,7 @@
 
 id: iris 
 title: "Iris"
-version: 0.1.0.0
+version: 0.1.0
 release-notes: "Initial Release"
 license: mit
 wrapper-repo: "https://github.com/Start9Labs/iris-wrapper"
