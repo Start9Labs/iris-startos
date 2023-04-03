@@ -1,8 +1,10 @@
 
 id: iris 
 title: "Iris"
-version: 0.1.0
-release-notes: "Initial Release"
+version: 0.1.0.1
+release-notes: |
+  * Add catch-all location block to handle client-side routing
+  * Add gzip compression
 license: mit
 wrapper-repo: "https://github.com/Start9Labs/iris-wrapper"
 upstream-repo: "https://github.com/irislib/iris-messenger"
