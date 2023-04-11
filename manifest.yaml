@@ -1,8 +1,9 @@
 
 id: iris 
 title: "Iris"
-version: 0.1.0.1
+version: 0.1.0.2
 release-notes: |
+  * Latest Iris upstream update from production branch
   * Add catch-all location block to handle client-side routing
   * Add gzip compression
 license: mit
