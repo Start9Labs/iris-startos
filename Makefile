@@ -5,7 +5,7 @@ TS_FILES := $(shell find ./ -name \*.ts)
 # delete the target of a rule if it has changed and its recipe exits with a nonzero exit status
 .DELETE_ON_ERROR:
 
-all: verify
+all: submodule-update verify
 
 verify: $(PKG_ID).s9pk
 	@embassy-sdk verify s9pk $(PKG_ID).s9pk
@@ -21,9 +21,24 @@ endif
 
 clean:
 	rm -rf docker-images
-	rm -f image.tar
 	rm -f $(PKG_ID).s9pk
 	rm -f scripts/*.js
+
+submodule-update:
+	@if [ -z "$(shell git submodule status | egrep -v '^ '|awk '{print $2}')" ]; then \
+		echo "\nAll submodules ready for build.\n"; \
+	else \
+		echo "\nPulling submodules...\n"; \
+		git submodule update --init --progress; \
+	fi
+
+arm:
+	@rm -f docker-images/x86_64.tar
+	@ARCH=aarch64 $(MAKE)
+
+x86:
+	@rm -f docker-images/aarch64.tar
+	@ARCH=x86_64 $(MAKE)
 
 scripts/embassy.js: $(TS_FILES)
 	deno bundle scripts/embassy.ts scripts/embassy.js
