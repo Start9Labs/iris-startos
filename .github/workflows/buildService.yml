@@ -48,6 +48,7 @@ jobs:
           cd embassy-os;
           git submodule update --init --recursive
           cd backend;
+          export OS_ARCH="x86_64";
           export RUSTFLAGS="";
           ./install-sdk.sh;
       - name: Build the service package
